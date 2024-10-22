@@ -1,0 +1,50 @@
+.list-form__results {
+    padding: 11px;
+    color: black;
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    margin-block: 35px;
+    height: 144px;
+    overflow-y: auto;
+}
+
+.list-form__results-skeleton {
+    display: grid;
+    height: 100%;
+    place-content: center center;
+}
+
+.list-form__controls {
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+    gap: 14px
+}
+
+@media (max-width: 600px) {
+    .list-form__controls {
+        display: flex;
+        flex-direction: column
+    }
+
+    .button-primary {
+        width: 100%;
+    }
+}
+
+.list__item {
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.list__item-value {
+    padding: 9px 15px;
+    font-size: 18px;
+    display: block;
+}
+
+.list__item-input:checked+.list__item-value {
+    color: white;
+    background-color: #324BFF !important;
+    cursor: default;
+}

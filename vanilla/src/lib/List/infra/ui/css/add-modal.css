@@ -1,0 +1,44 @@
+#add-modal {
+    position: fixed;
+    inset: 0;
+    border: none;
+    background: #0000001A 0% 0% no-repeat padding-box;
+    place-content: center center;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform .25s ease;
+    transform: translateY(-100%);
+}
+
+#add-modal[open] {
+    display: grid;
+}
+
+#add-modal::backdrop {
+    display: none;
+}
+
+#add-modal form {
+    display: grid;
+    min-width: 700px;
+    gap: 20px;
+}
+
+#add-modal input {
+    padding: 21px 19px;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+}
+
+#add-modal .add-modal__controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 17px;
+}
+
+#add-modal.toggle-appear {
+    transform: translateY(0%);
+    pointer-events: auto;
+}

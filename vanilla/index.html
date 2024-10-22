@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Vanilla Logitravel Test</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+
+  <dialog id="add-modal" open>
+    <form class="container">
+      <h2>
+        Add item to list
+      </h2>
+      <input type="text" autofocus required name="new-item-value" id="new-item-value"
+        placeholder="Type the text here...">
+      <div class="add-modal__controls">
+        <button value="add" class="button button-primary">
+          ADD
+        </button>
+        <button id="add-modal-close" type="button" value="cancel" class="button">
+          CANCEL
+        </button>
+      </div>
+    </form>
+  </dialog>
+
+  <main>
+    <section id="list" class="container">
+      <header>
+        <h1>
+          This is a technical proof
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing, elit mus primis nec inceptos. Lacinia habitasse arcu
+          molestie
+          maecenas cursus quam nunc, hendrerit posuere augue fames dictumst placerat porttitor, dis mi pharetra
+          vestibulum
+          venenatis phasellus.
+        </p>
+      </header>
+
+      <form id="list-form">
+        <div class="list-form__results">
+          <div class="list-form__results-skeleton">
+            Loading...
+          </div>
+        </div>
+        <div class="list-form__controls">
+          <button class="button" value="undo">
+            Back
+          </button>
+          <button class="button" value="delete">
+            Delete
+          </button>
+          <button class="button button-primary" value="add">
+            Add
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <template id="list-item-template">
+    <label class="list__item">
+      <input class="list__item-input" type="checkbox" name="list-item" hidden>
+      <span class="list__item-value">
+
+      </span>
+    </label>
+  </template>
+</body>
+</html>

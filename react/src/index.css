@@ -1,0 +1,42 @@
+@import url('/src/lib/List/infra/ui/css/list.css');
+@import url('/src/lib/List/infra/ui/css/add-modal.css');
+@import url('/src/components/Container/container.css');
+
+:root {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding-inline: 25px;
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  background: transparent linear-gradient(135deg, #A1C4FD 0%, #C2E9FB 100%) 0% 0% no-repeat padding-box;
+}
+
+.button {
+  border-radius: 50px;
+  padding: 15px 30px 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  color: #324BFF;
+  --border-color: #324BFF;
+
+}
+
+.button-primary {
+  margin-left: auto;
+  color: white;
+  --border-color: #324BFF;
+  background-color: #324BFF;
+}
