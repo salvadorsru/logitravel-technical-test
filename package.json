@@ -1,0 +1,16 @@
+{
+  "name": "logitravel-technical-test",
+  "type": "module",
+  "scripts": {
+    "install:react": "cd react && npm install",
+    "start:react": "cd react && npm run dev",
+    "install:vanilla": "cd vanilla && npm install",
+    "start:vanilla": "cd vanilla && npm run dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
