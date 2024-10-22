@@ -29,3 +29,16 @@ En principio he cubierto todos los requerimientos
 ### Notas:
 1. No optimicé al máximo la carga de CSS, ya que no era un requerimiento esencial. Normalmente, utilizaría librerías externas como Tailwind o CSS Modules, pero consideré que este no era el enfoque principal de la tarea.
 2. No implementé pruebas, ya que no era un requisito; sin embargo, en un escenario real, probablemente utilizaría Vitest y Playwright.
+
+### Iniciar paquetes
+
+Dentro de este propio repositorio en el archivo package.json pueden desplegar ambas implementaciones en modo desarrollo utilizando los comandos:
+
+```sh
+npm run install:react
+npm run start:react
+```
+```sh
+npm run install:vanilla
+npm run start:vanilla
+```
