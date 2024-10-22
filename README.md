@@ -1,5 +1,5 @@
 
-# Bienvenido a mi repositorio para la prueba técnica de LogiTravel.
+# Prueba técnica de LogiTravel
 
 Dado que se me otorgó cierta libertad para elegir las tecnologías para esta prueba, decidí utilizar Vite.js tanto para la implementación del ejercicio en React como para el ejercicio en VanillaJS.
 
